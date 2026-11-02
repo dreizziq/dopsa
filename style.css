@@ -1,0 +1,73 @@
+/* Стили исходного проекта CodePen сохранены */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #f0f0f0;
+  --button-bg: #e0e0e0;
+  --button-text: #333333;
+  --hr-color: #cccccc;
+}
+
+body.dark {
+  --bg-color: #333333;
+  --text-color: #f0f0f0;
+  --header-bg: #222222;
+  --button-bg: #444444;
+  --button-text: #f0f0f0;
+  --hr-color: #555555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#theme-toggle {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+article {
+  background-color: var(--header-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+h2 { margin-top: 0; font-size: 1.3rem; }
+h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+hr { border: none; border-top: 1px solid var(--hr-color); margin: 1.5rem 0; transition: border-color 0.3s; }
+p { margin: 0.5rem 0; }
